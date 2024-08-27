@@ -4,6 +4,6 @@ export function Child() {
     var {trackEvent} = useTracking<any>({child: "child"});
     
     return (
-        <button type='button' onClick={() => trackEvent({event: 'click in Child'})}>Child</button>
+        <button type='button' onClick={() => trackEvent({event: 'click in Child, missing tracking information from Shell'})}>Child</button>
     )
 }
